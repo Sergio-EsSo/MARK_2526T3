@@ -12,6 +12,7 @@
 <xs:element name="precio">
     <xs:simpleType>
         <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2"/>
             <xs:minInclusive value="0"/>
         </xs:restriction>
     </xs:simpleType>

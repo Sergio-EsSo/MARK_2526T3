@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<xs:element name="nombre">
-    <xs:simpleType>
+<xs:element name="nombre" type="capital"/>
+<xs:element name="apellido" type="capital"/>
+
+    <xs:simpleType name="capital">
         <xs:restriction base="xs:string">
             <xs:pattern value="[A-Z][a-zA-Z\s]*"/>
         </xs:restriction>
     </xs:simpleType>
-</xs:element>
-<xs:element name="apellido">
-    <xs:simpleType>
-        <xs:restriction base="xs:string">
-            <xs:pattern value="[A-Z][a-zA-Z\s]*"/>
-        </xs:restriction>
-    </xs:simpleType>
-</xs:element>
+
 <xs:element name="fechaNacimiento">
     <xs:simpleType>
         <xs:restriction base="xs:date">

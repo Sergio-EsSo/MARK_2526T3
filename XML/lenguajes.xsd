@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="nombre" type="xs:string"/>
+<xs:element name="creador" type="xs:string"/>
+<xs:element name="annoCreacion" type="xs:gYear"/>
+
+
+<xs:element name="lenguaje">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="nombre"/>
+            <xs:element ref="creador"/>
+            <xs:element ref="annoCreacion"/>
+            <xs:choice>
+                <xs:element name="descripcion" type="xs:string"/>
+                <xs:element name="enlace_web" type="xs:anyURI"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="lenguajes">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="lenguaje" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

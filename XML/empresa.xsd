@@ -13,10 +13,12 @@
 <xs:element name="fechaNacimiento">
     <xs:simpleType>
         <xs:restriction base="xs:date">
-
+            <xs:minInclusive value="1975-01-01"/>
+            <xs:maxInclusive value="1999-12-31"/>
         </xs:restriction>
     </xs:simpleType>
 </xs:element>
+
 <xs:element name="salario">
     <xs:simpleType>
         <xs:restriction base="xs:decimal">
@@ -25,8 +27,17 @@
         </xs:restriction>
     </xs:simpleType>
 </xs:element>
+
 <xs:element name="activo" type="xs:boolean"/>
-<xs:element name="horaEntrada" type="xs:time"/>
+
+<xs:element name="horaEntrada">
+    <xs:simpleType>
+        <xs:restriction base="xs:time">
+            <xs:minInclusive value="06:00:00"/>
+            <xs:maxInclusive value="14:00:00"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
 
 <xs:element name="empleado">
     <xs:complexType>

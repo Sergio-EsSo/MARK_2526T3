@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operaciones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="mayorista.xsd">
+
+<operacion>
+    <compra>
+        <titulo>La Biblia</titulo>
+        <titulo>Pentateuco</titulo>
+        <proveedor>Francisco Juan Editoriales</proveedor>
+        <fecha_compra>
+            <dia>19</dia>
+            <mes>11</mes>
+            <año>2025</año>
+        </fecha_compra>
+    </compra>
+</operacion>
+
+<operacion>
+    <compra>
+        <titulo>Diario de Marisa Velazquez</titulo>
+        <proveedor>El rincón de Germán</proveedor>
+        <fecha_compra>
+            <dia>3</dia>
+            <mes>1</mes>
+            <año>2026</año>
+        </fecha_compra>
+    </compra>
+    <venta>
+        <titulo>50 Sombras de Grey</titulo>
+        <cantidad>20</cantidad>
+        <entregado>true</entregado>
+        <importe moneda="euros">878.3</importe>
+    </venta>
+</operacion>
+
+</operaciones>

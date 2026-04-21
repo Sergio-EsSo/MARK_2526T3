@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operaciones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="mayorista.xsd">
+
+<operacion>
+    <venta>
+        <titulo>100 Días de Soledad</titulo>
+        <cantidad>35</cantidad>
+        <entregado>false</entregado>
+        <importe moneda="libras">723.42</importe>
+    </venta>
+</operacion>
+
+<operacion>
+    <venta>
+        <titulo>Asesinato a Dos Velas</titulo>
+        <cantidad>30</cantidad>
+        <entregado>true</entregado>
+        <importe moneda="euros">659.9</importe>
+    </venta>
+    <compra>
+        <titulo>Diario de Marisa Velazquez</titulo>
+        <proveedor>Editorial Margarita</proveedor>
+        <fecha_compra>
+            <dia>8</dia>
+            <mes>2</mes>
+            <año>2026</año>
+        </fecha_compra>
+    </compra>
+</operacion>
+
+<operacion>
+    <venta>
+        <titulo>Guia para un Psicopata</titulo>
+        <cantidad>17</cantidad>
+        <entregado>false</entregado>
+        <importe moneda="dolares">245.67</importe>
+    </venta>
+    <venta>
+        <titulo>Un Emprendedor en Nueva Delhi</titulo>
+        <cantidad>5</cantidad>
+        <entregado>false</entregado>
+        <importe moneda="dolares zimbauenses">38250.4</importe>
+    </venta>
+</operacion>
+
+</operaciones>

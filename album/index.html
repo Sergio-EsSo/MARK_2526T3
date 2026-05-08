@@ -9,7 +9,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Astro v5.13.2" />
-    <title>Album example · Bootstrap v5.3</title>
+    <title>Mi Album</title>
     <link
       rel="canonical"
       href="https://getbootstrap.com/docs/5.3/examples/album/"
@@ -42,7 +42,7 @@
         border: solid rgba(0, 0, 0, 0.15);
         border-width: 1px 0;
         box-shadow:
-          inset 0 0.5em 1.5em #0000001a,
+          inset 0 0.5em 1.5em #b310101a,
           inset 0 0.125em 0.5em #00000026;
       }
       .b-example-vr {
@@ -95,6 +95,25 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+      .card { 
+        transition: transform .3s ease, box-shadow .3s ease; 
+      }
+      .card:hover { 
+        transform: translateY(-10px); box-shadow: 0 1rem 3rem rgba(204, 28, 28, 0.175)!important; 
+      }
+      .card-img-custom {
+        height: 200px;       /* Ajustar altura */
+        object-fit: cover;   /* Recortar la imagen para que llene el espacio sin deformarse */
+        width: 100%;         /* Asegurar que ocupe todo el ancho del contenedor */
+      }
+      .card-body{
+        display: flex;
+        flex-direction: column;
+      }
+      .cart-text{
+        flex-grow: 1;
+        margin-bottom: 1.5rem;
+      }
     </style>
   </head>
   <body>
@@ -133,14 +152,15 @@
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
               <h4>About</h4>
-              <p class="text-body-secondary">Add some information about the album below, the author, or any other background context.</p>
+              <p class="text-body-secondary">No deberías estar leyendo esto. Deberías estar mirando otras cosas.</p>
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
               <h4>Contact</h4>
               <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on X</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
+                <li><a href="https://dle.rae.es/no" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="text-white">No</a></li>
               </ul>
             </div>
           </div>
@@ -149,8 +169,8 @@
       <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container">
           <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-            <strong>Album</strong>
+            <img src="https://cdn3.emoji.gg/emojis/3353-joe-therock.png" alt="Logo" width="20" height="20" class="me-2">
+            <strong>MuBa</strong>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -163,45 +183,264 @@
       <section class="py-5 text-center container">
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">Album example</h1>
-            <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc.</p>
-            <p>
-              <a href="#" class="btn btn-primary my-2">Main call to action</a>
-              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-            </p>
+            <h1 class="fw-light"><strong>Museo de las Baratijas</strong></h1>
+            <p class="lead text-body-secondary">Explora esta colección exclusiva de rarezas que me pertenecen de forma legítima.</p>
           </div>
         </div>
       </section>
 
       <div class="album py-5 bg-body-tertiary">
         <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <!-- Repetir tarjetas según sea necesario -->
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            
             <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
+              <div class="card h-100 shadow-sm">
+                <img src="https://www.worldhistory.org/uploads/images/4187.jpg" class="card-img-custom" alt="Producto">
+                
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Una Ánfora</h5>
+                  <p class="card-text text-secondary small">Griega. A veces sirve para almacenar líquidos.</p>
+                  
+                  <div class="mt-auto pt-3">
+                    <a href="https://es.wikipedia.org/wiki/%C3%81nfora" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-sm btn-outline-info">
+                      <i class="bi bi-info-circle"></i> Más información
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- ... más tarjetas ... -->
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Square_nuts_from_Ace_Hardware%2C_Concord_MA.jpg/960px-Square_nuts_from_Ace_Hardware%2C_Concord_MA.jpg" class="card-img-custom" alt="Producto">
+                
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Tres Tuercas</h5>
+                  <p class="card-text text-secondary small">Cuadradas. Flípalo.</p>
+                  
+                  <div class="mt-auto pt-3">
+                    <a href="https://es.wikipedia.org/wiki/Tuerca" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-sm btn-outline-info">
+                      <i class="bi bi-info-circle"></i> Más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Basalto_roca.jpg/960px-Basalto_roca.jpg" class="card-img-custom" alt="Producto">
+                
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Una Roca Ígnea Extrusiva</h5>
+                  <p class="card-text text-secondary small">Se puede decir Basalto, pero no Basclaro.</p>
+                  
+                  <div class="mt-auto pt-3">
+                    <a href="https://es.wikipedia.org/wiki/Basalto" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-sm btn-outline-info">
+                      <i class="bi bi-info-circle"></i> Más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://www.prosegur.es/dam/jcr:0ae47351-c6c6-4627-b5d8-212f00cd911d/europeos-adios-monedas-1-2-centimos.jpg" class="card-img-custom" alt="Producto">
+                
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">2.67€</h5>
+                  <p class="card-text text-secondary small">Tres veces menos que el salario mínimo en Cuntis.</p>
+                  
+                  <div class="mt-auto pt-3">
+                    <a href="https://es.wikipedia.org/wiki/Cuntis" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-sm btn-outline-info">
+                      <i class="bi bi-info-circle"></i> Más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://images.milanuncios.com/api/v1/ma-ad-media-pro/images/d0d80b38-b848-47d3-b509-047b3f449655?rule=hw396_70" class="card-img-custom" alt="Producto">
+                
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Memoria RAM DDR2 8GB</h5>
+                  <p class="card-text text-secondary small">Un críptido propio de la mitología Sumeria.</p>
+                  
+                  <div class="mt-auto pt-3">
+                    <a href="https://es.wikipedia.org/wiki/Anexo:Cr%C3%ADptidos" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-sm btn-outline-info">
+                      <i class="bi bi-info-circle"></i> Más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHc84Nb5bUluYSdW1GcFfU0Ltsr-CBOJLvtA&s" class="card-img-custom" alt="Producto">
+                
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Bocata Lomo</h5>
+                  <p class="card-text text-secondary small">Ya.</p>
+                  
+                  <div class="mt-auto pt-3">
+                    <a href="https://es.wikipedia.org/wiki/Lomo_de_cerdo" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-sm btn-outline-info">
+                      <i class="bi bi-info-circle"></i> Más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://www.fishipedia.es/wp-content/uploads/2020/06/DSC03086-scaled.jpg" class="card-img-custom" alt="Producto">
+                
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Un Mero</h5>
+                  <p class="card-text text-secondary small">Meramente un pez.</p>
+                  
+                  <div class="mt-auto pt-3">
+                    <a href="https://es.wikipedia.org/wiki/Epinephelinae" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-sm btn-outline-info">
+                      <i class="bi bi-info-circle"></i> Más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Complaint_tablet_to_Ea-Nasir_2020.jpg" class="card-img-custom" alt="Producto">
+                
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Un Recibo</h5>
+                  <p class="card-text text-secondary small">Un <em>poco</em> viejo.</p>
+                  
+                  <div class="mt-auto pt-3">
+                    <a href="https://es.wikipedia.org/wiki/Tablilla_de_Ea-nasir" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-sm btn-outline-info">
+                      <i class="bi bi-info-circle"></i> Más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://i.ytimg.com/vi/jULu61kl7DA/maxresdefault.jpg" class="card-img-custom" alt="Producto">
+                
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">463 Cigarrillos</h5>
+                  <p class="card-text text-secondary small"><strong>Solo se vive una vez</strong>, pero se puede ser feliz 463 veces al día.</p>
+                  
+                  <div class="mt-auto pt-3">
+                    <a href="https://pnsd.sanidad.gob.es/ciudadanos/informacion/tabaco/menuTabaco/riesgos.htm" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-sm btn-outline-info">
+                      <i class="bi bi-info-circle"></i> Más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Mercury_in_color_-_Prockter07_centered.jpg" class="card-img-custom" alt="Producto">
+                
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Mercurio</h5>
+                  <p class="card-text text-secondary small">A veces retrógrado.</p>
+                  
+                  <div class="mt-auto pt-3">
+                    <a href="https://es.wikipedia.org/wiki/Mercurio_%28planeta%29" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-sm btn-outline-info">
+                      <i class="bi bi-info-circle"></i> Más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://store-images.s-microsoft.com/image/apps.14785.14423064005243201.42399137-369b-40bb-b5be-ac2f079c41bf.b1d6d110-9d93-441f-ac20-2e04fd7dfe3c" class="card-img-custom" alt="Producto">
+                
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">ChatGPT</h5>
+                  <p class="card-text text-secondary small">Es mentira. Como todo lo que dice.</p>
+                  
+                  <div class="mt-auto pt-3">
+                    <a href="https://es.wikipedia.org/wiki/Basalto" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-sm btn-outline-info">
+                      <i class="bi bi-info-circle"></i> Más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Anden_de_Cercanias.jpg" class="card-img-custom" alt="Producto">
+                
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Renfe Cercanías</h5>
+                  <p class="card-text text-secondary small">Nada bueno que decir sobre Renfe.</p>
+                  
+                  <div class="mt-auto pt-3">
+                    <a href="https://es.wikipedia.org/wiki/Cercan%C3%ADas_Madrid" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      class="btn btn-sm btn-outline-info">
+                      <i class="bi bi-info-circle"></i> Más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </main>
 
-    <footer class="text-body-secondary py-5">
-      <div class="container">
-        <p class="float-end mb-1"><a href="#">Back to top</a></p>
-        <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+    <footer class="text-body-secondary py-5 border-top mt-5">
+      <div class="container text-center">
+        <p class="mb-1">© 2019 Churrasco Enterprise. Todos los derechos reservados.</p>
       </div>
     </footer>
 

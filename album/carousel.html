@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>???apapa???</title>
+    <title>calzadospaco.com</title>
+    <link rel="icon" type="image/png" href="https://cdn3.emoji.gg/emojis/6635-joe-hmmm.png">
 
     <!-- Bootstrap CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -80,19 +81,19 @@
             }
         }
         .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
+        --bd-violet-bg: #818085;
         --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
         --bs-btn-font-weight: 600;
         --bs-btn-color: var(--bs-white);
         --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-border-color: #727272;
         --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-hover-bg: #4f4c54;
+        --bs-btn-hover-border-color: #9d9d9d;
         --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
         --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
+        --bs-btn-active-bg: #282829;
+        --bs-btn-active-border-color: #8a8a8a;
       }
       .bd-mode-toggle {
         z-index: 1500;
@@ -105,6 +106,12 @@
         display: block !important;
       }
 
+      .carousel-caption h1, .carousel-caption p {
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8), 
+                    -1px -1px 0 rgba(255, 255, 255, 4);
+        color: #000000 !important;
+      }
+
     </style>
 
     <script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
@@ -115,18 +122,16 @@
     <header data-bs-theme="dark">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Carousel</a>
+                <a class="navbar-brand" href="#">Calzados Paco</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                        <li class="nav-item"><a class="nav-link disabled">Desactivado</a></li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <form class="d-flex" role="search" id="searchForm">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="searchInput">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
@@ -144,32 +149,41 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                    <img src="https://media.gq.com/photos/60d21a25ab6b8cc6e9d2c80a/1:1/w_3600,h_3600,c_limit/SNEAKER_GUIDE_OPENER.jpg" 
+                        class="d-block w-100 h-100" 
+                        style="object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;" 
+                        alt="Fondo">
                     <div class="container">
                         <div class="carousel-caption text-start">
-                            <h1>Titular de ejemplo.</h1>
-                            <p>Contenido de relleno para la primera diapositiva.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Regístrate hoy</a></p>
+                            <h1>Originalidad</h1>
+                            <p>Cualquier clase de calzado que te puedas imaginar</p>
+                            <p><a class="btn btn-lg btn-primary" href="https://aprendetu.vercel.app/">Regístrate hoy</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                    <img src="https://cdn.outsideonline.com/wp-content/uploads/2026/03/S26-road-shoes_h.jpg?auto=webp&width=3840&quality=75&fit=cover" 
+                        class="d-block w-100 h-100" 
+                        style="object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;" 
+                        alt="Fondo">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Otro titular de ejemplo.</h1>
-                            <p>Algún contenido representativo para la segunda diapositiva.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Leer más</a></p>
+                            <h1>Flexibilidad</h1>
+                            <p>Incluye detalles personalizados y envíos a domicilio</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#modalLeerMas">Leer más</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                    <img src="https://media.gq.com/photos/6813a873625bf4cbda4cb50c/16:9/w_2000,h_1125,c_limit/sneaker%20lede%20v1.png" 
+                        class="d-block w-100 h-100" 
+                        style="object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1;" 
+                        alt="Fondo">
                     <div class="container">
                         <div class="carousel-caption text-end">
-                            <h1>Uno más para terminar.</h1>
-                            <p>Contenido adicional para la tercera diapositiva de este carrusel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Galería</a></p>
+                            <h1>Variedad</h1>
+                            <p>También vendemos kebab y otra comida propia de la gastronomía turca</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#modalGaleria">Galería</a></p>
                         </div>
                     </div>
                 </div>
@@ -188,22 +202,22 @@
         <div class="container marketing">
             <div class="row">
                 <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-                    <h2 class="fw-normal">Encabezado</h2>
-                    <p>Contenido de la primera columna.</p>
-                    <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+                    <img src="https://cdn.thisiswhyimbroke.com/images/homer-simpson-slippers1.jpg" class="rounded-circle" width="140" height="140" alt="zapat" style="object-fit: cover;">
+                    <h2 class="fw-normal">Homers</h2>
+                    <p>299.99Le</p>
+                    <p><a class="btn btn-secondary" href="#" data-bs-toggle="modal" data-bs-target="#modalDetalles">Ver detalles &raquo;</a></p>
                 </div>
                 <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-                    <h2 class="fw-normal">Encabezado</h2>
-                    <p>Contenido de la segunda columna.</p>
-                    <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+                    <img src="https://i.pinimg.com/736x/d6/e5/0a/d6e50a867fa627fb9f06ceaaabd50b24.jpg" class="rounded-circle" width="140" height="140" alt="zapat" style="object-fit: cover;">
+                    <h2 class="fw-normal">Lo que sea esto</h2>
+                    <p>330.33Le</p>
+                    <p><a class="btn btn-secondary" href="#" data-bs-toggle="modal" data-bs-target="#modalDetalles">Ver detalles &raquo;</a></p>
                 </div>
                 <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-                    <h2 class="fw-normal">Encabezado</h2>
-                    <p>Contenido de la tercera columna.</p>
-                    <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+                    <img src="https://i1.sndcdn.com/artworks-f7tWyxltlo5NOhTN-WLVymg-t1080x1080.jpg" class="rounded-circle" width="140" height="140" alt="zapat" style="object-fit: cover;">
+                    <h2 class="fw-normal">Pies</h2>
+                    <p>59.99Le</p>
+                    <p><a class="btn btn-secondary" href="#" data-bs-toggle="modal" data-bs-target="#modalDetalles">Ver detalles &raquo;</a></p>
                 </div>
             </div>
 
@@ -211,11 +225,53 @@
 
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">Primer título destacado. <span class="text-body-secondary">Te sorprenderá.</span></h2>
-                    <p class="lead">Un gran contenido de marcador de posición para la primera sección.</p>
+                    <h2 class="featurette-heading fw-normal lh-1">Verdes y vistosas. <span class="text-body-secondary"><br>Por solo 139<small>.99Le</small></span></h2>
+                    <p class="lead">A veces hay que ponerse en los zapatos de los demás.</p>
                 </div>
                 <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+                    <img src="https://i.pinimg.com/1200x/5a/cb/03/5acb0326b1cacb19c54e6a173d392297.jpg" 
+                        class="featurette-image img-fluid mx-auto rounded shadow" 
+                        width="500" 
+                        height="500" 
+                        alt="Descripción de la imagen"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Nuevo Amanecer. <span class="text-body-secondary"><br>Por solo 99<small>.99Le</small></span></h2>
+                    <p class="lead">Me las quitan de los pies.</p>
+                </div>
+                
+                <div class="col-md-5 order-md-1">
+                    <img src="https://www.shutterstock.com/image-photo/old-grungy-torn-slippers-on-600nw-2035741070.jpg" 
+                        class="featurette-image img-fluid mx-auto rounded shadow" 
+                        width="500" 
+                        height="500" 
+                        alt="Descripción de la imagen"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+            
+            <br>
+            <br>
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Esencia de Río. <span class="text-body-secondary"><br>Por solo 110<small>.99Le</small></span></h2>
+                    <p class="lead">Cuatro millones de años de evolución para esto.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="https://www.beauf-attitude.com/wp-content/uploads/nc/s/files/1/0562/3752/3033/products/SandaleEnFormeDePoisson_7.jpg" 
+                        class="featurette-image img-fluid mx-auto rounded shadow" 
+                        width="500" 
+                        height="500" 
+                        alt="Descripción de la imagen"
+                        style="object-fit: cover;">
                 </div>
             </div>
 
@@ -224,31 +280,158 @@
 
         <footer class="container">
             <p class="float-end"><a href="#">Volver arriba</a></p>
-            <p>&copy; 2017–2026 Compañía, Inc. &middot; <a href="#">Privacidad</a> &middot; <a href="#">Términos</a></p>
+            <p>&copy; 2019 Churrasco Enterprise. Todos los derechos reservados. &middot; <a href="#" data-bs-toggle="modal" data-bs-target="#modalTerminos">Términos</a></p>
         </footer>
     </main>
 
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" aria-hidden="true"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" aria-hidden="true"><use href="#circle-half"></use></svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
             <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                <img src="https://cdn3.emoji.gg/emojis/2421_stressed_glance.png" class="me-2 opacity-50" width="16" height="16" alt="Light Mode">Claro
+                <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#sun-fill"></use></svg>
+                Claro
+                <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
             </button>
-        </li>
-        <li>
+            </li>
+            <li>
             <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                <img src="https://cdn3.emoji.gg/emojis/2421_stressed_glance.png" class="me-2 opacity-50" width="16" height="16" alt="Dark Mode">Oscuro
+                <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#moon-stars-fill"></use></svg>
+                Oscuro
+                <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
             </button>
-        </li>
-      </ul>
+            </li>
+            <li>
+            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#circle-half"></use></svg>
+                Auto
+                <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+            </button>
+            </li>
+        </ul>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+        </symbol>
+    </svg>
+
+    <div class="modal fade" id="modalTerminos" tabindex="-1" aria-labelledby="modalTerminosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTerminosLabel">Términos y Condiciones</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>HOLA!</p>
+                <p>Soy el primer virus gallego. Como los gallegos no tenemos experiencia en programación, este virus trabaja basado en un sistema de HONOR.</p>
+                <p><strong>Por favor:</strong> Borre todos los archivos de su disco duro manualmente y envíe este mensaje a todos los miembros de su lista de correo.<br></p>
+                <p>Gracias por su cooperación.</p>
+                <p>Manolo</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendido</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLeerMas" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">!! ENVÍOS CANCELADOS INDEFINIDAMENTE !!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Disculpe las molestias</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalGaleria" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Menú</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-2">
+                <div class="col-6">
+                    <img src="https://www.kanamitravel.com/blog/wp-content/uploads/2022/06/52894927_ml-1024x683.jpg" class="img-fluid rounded" alt="kebab">
+                </div>
+                <div class="col-6">
+                    <img src="https://fotografias.lasexta.com/clipping/cmsimages02/2020/07/24/0060B219-C90F-4A2B-8A68-8F04A6E6422B/98.jpg?crop=1920,1080,x0,y180&width=1900&height=1069&optimize=high&format=webply" class="img-fluid rounded" alt="kofre">
+                </div>
+                <div class="col-12 mt-2">
+                    <img src="https://miviaje.com/wp-content/uploads/2020/03/baklava.jpg?auto=format%2Ccompress&quality=75&width=3840&height=2160&fit=cover&gravity=center&sharp=true&progressive=true" class="img-fluid rounded" alt="algo">
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDetalles" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detalle(s):</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-2">
+                <div class="col-6">
+                    <img src="https://i.pinimg.com/736x/c9/ff/76/c9ff76f9384a0744efc1b9e72f1217bd.jpg" class="img-fluid rounded" alt="chorizo">
+                </div>
+                <div class="col-6">
+                    <img src="https://i.pinimg.com/736x/04/ad/5b/04ad5b05b81ce80ec377de022f5950fd.jpg" class="img-fluid rounded" alt="criollo">
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap JS (CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita que la página se recargue
+
+            const textoABuscar = document.getElementById('searchInput').value.trim();
+            
+            if (textoABuscar === "") return;
+
+            // Limpiamos resaltados previos si los hubiera (opcional)
+            // Usamos la función nativa de ventana para buscar
+            if (window.find) {
+                const encontrado = window.find(textoABuscar);
+                if (!encontrado) {
+                    alert("No se encontró ninguna coincidencia con: " + textoABuscar);
+                }
+            } else {
+                alert("Tu navegador no soporta esta función de búsqueda directa.");
+            }
+        });
+    </script>
 </body>
 </html>

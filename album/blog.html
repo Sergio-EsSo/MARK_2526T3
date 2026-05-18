@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <title>Blog Template · Bootstrap v5.3 (CDN)</title>
+    <title>guitierrezblog.com</title>
+
+    <link rel="icon" type="image/png" href="https://cdn3.emoji.gg/emojis/6635-joe-hmmm.png">
     
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
     
@@ -214,7 +216,7 @@
                 <path d="M21 21l-5.2-5.2"></path>
               </svg>
             </a>
-            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+            <a class="btn btn-sm btn-outline-secondary" href="#" data-bs-toggle="modal" data-bs-target="#Signing">Sign up</a>
           </div>
         </div>
       </header>
@@ -243,7 +245,7 @@
         <div class="col-lg-6 px-0">
           <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
           <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-          <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+          <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold" data-bs-toggle="modal" data-bs-target="#Cont1">Continue reading...</a></p>
         </div>
       </div>
 
@@ -399,8 +401,77 @@
       </div>
     </main>
 
+    <div class="modal fade" id="Signing" tabindex="-1" aria-labelledby="SigningLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          
+          <div class="modal-header">
+            <h5 class="modal-title" id="SigningLabel">Crea una cuenta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body">
+            <form>
+
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="nombre@gmail.com" required>
+              </div>
+              
+              <div class="mb-3">
+                <label for="inputPassword" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Crea una contraseña" required>
+              </div>
+              
+              <div class="d-grid gap-2 mt-4">
+                <button type="submit" class="btn btn-success">Crear cuenta</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!--Contenedores con texto extra-->
+    <!-- The Modal Container using class "Signing23" -->
+    <div class="modal fade Signing23" id="Signing" tabindex="-1" aria-labelledby="Cont1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          
+          <!-- Modal Header with Title and 'X' Close Button -->
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="Cont1">Terms of Service & Privacy</h5>
+            <!-- The 'X' Close Button -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <!-- Modal Body with Multiple Paragraphs -->
+          <div class="modal-body text-muted" style="font-size: 0.95rem; line-height: 1.6;">
+            <p>
+              Welcome to our platform. Before you continue reading or accessing our full suite of features, please take a moment to review our updated guidelines and community standards.
+            </p>
+            
+            <p>
+              By proceeding past this screen, you agree that your data will be handled securely in accordance with our privacy framework. We prioritize your confidentiality and ensure that your email and credentials remain encrypted at all times.
+            </p>
+            
+            <p>
+              If you have any questions regarding these updates, or if you encounter any issues while setting up your account, please feel free to reach out to our support channel. You can dismiss this prompt at any time using the close button above.
+            </p>
+          </div>
+          
+          <!-- Optional Modal Footer (Can be removed if not needed) -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary btn-sm">Accept & Continue</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-      <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://x.com/mdo">@mdo</a>.</p>
       <p class="mb-0"><a href="#">Back to top</a></p>
     </footer>
 

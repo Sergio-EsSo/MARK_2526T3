@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum Vitae - Sergio Estévez Soto</title>
+    <link rel="icon" type="image/png" href="https://www.cebem.es/images/logo-cebem.webp">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        html, body {
+            background-color: #e2e8f0;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1e293b;
+        }
+        .cv-container {
+            background-color: #f8fafc;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            padding: 20mm 15mm;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            position: relative;
+        }
+        @page {
+            size: A4;
+            margin: 20mm 15mm;
+        }
+        @media print {
+            html, body {
+                background-color: #f8fafc;
+            }
+            .cv-container {
+                width: 100%;
+                min-height: initial;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+        }
+        .header {
+            border-bottom: 3px solid #0f172a;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .header h1 {
+            font-size: 24pt;
+            color: #1e3a8a;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+        .title-sub {
+            font-size: 13pt;
+            color: #3b82f6;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .contact-info {
+            width: 100%;
+            margin-top: 10px;
+            font-size: 10pt;
+            color: #475569;
+        }
+        .contact-info td {
+            padding: 3px 0;
+        }
+        .contact-info strong {
+            color: #0f172a;
+        }
+        h2 {
+            font-size: 13pt;
+            color: #1e3a8a; /* Azul marino */
+            border-left: 5px solid #1e3a8a;
+            padding-left: 10px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            page-break-after: avoid;
+        }
+        .profile-text {
+            text-align: justify;
+            font-size: 10.5pt;
+            line-height: 1.6;
+            color: #334155;
+            margin-bottom: 20px;
+        }
+        .item {
+            margin-bottom: 16px;
+            page-break-inside: avoid;
+        }
+        .item-header {
+            width: 100%;
+            font-size: 11pt;
+            font-weight: bold;
+            color: #0f172a;
+        }
+        .item-date {
+            text-align: right;
+            font-weight: bold;
+            color: #1e3a8a;
+            font-size: 10pt;
+        }
+        .item-sub {
+            font-style: italic;
+            color: #475569;
+            font-size: 10pt;
+            margin-top: 2px;
+            font-weight: 500;
+        }
+        .item-details {
+            margin-top: 6px;
+            font-size: 10pt;
+            color: #334155;
+            padding-left: 5px;
+        }
+        ul {
+            margin: 5px 0 0 0;
+            padding-left: 18px;
+        }
+        li {
+            margin-bottom: 4px;
+            line-height: 1.5;
+        }
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+        .skills-table td {
+            width: 50%;
+            vertical-align: top;
+            padding-right: 20px;
+        }
+        .skills-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #1e3a8a;
+            font-size: 10.5pt;
+            border-bottom: 1px solid #cbd5e1;
+            padding-bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+
+    <!--<div class="header">
+        <h1>Sergio Estévez Soto</h1>
+        <div class="title-sub">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</div>
+        
+        <table class="contact-info">
+            <tr>
+                <td style="width: 35%;"><strong>Teléfono:</strong> +34 617 888 578</td>
+                <td style="width: 40%;"><strong>Email:</strong> 
+                    <a href="mailto:seesso2003@email.com" style="color: inherit; text-decoration: none;">seesso2003@email.com</a>
+                </td>
+                <td style="width: 25%; text-align: right;"><strong>Edad:</strong> 22 años</td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>Ubicación:</strong> Vigo, Pontevedra</td>
+                <td style="text-align: right; vertical-align: middle;">
+                    <a href="https://www.linkedin.com/in/sergio-estévez-soto-46b779376" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icono LinkedIn" style="width: 18px; height: 18px; vertical-align: middle; margin-left: 5px; cursor: pointer;">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>-->
+
+    <div class="header">
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <td style="vertical-align: top; width: 75%;">
+                    <h1>Sergio Estévez Soto</h1>
+                    <div class="title-sub">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</div>
+                    
+                    <table class="contact-info">
+                        <tr>
+                            <td style="width: 45%;"><strong>Teléfono:</strong> +34 617 888 578</td>
+                            <td style="width: 55%;"><strong>Email:</strong> 
+                                <a href="mailto:seesso2003@email.com" style="color: inherit; text-decoration: none;">seesso2003@email.com</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ubicación:</strong> Vigo, Pontevedra</td>
+                            <td><strong>Edad:</strong> 22 años</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding-top: 5px;">
+                                <a href="https://www.linkedin.com/in/sergio-estévez-soto-46b779376" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icono LinkedIn" style="width: 18px; height: 18px; vertical-align: middle; cursor: pointer;">
+                                    <span style="font-size: 10pt; color: #475569; vertical-align: middle; margin-left: 5px;">LinkedIn</span>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                
+                <td style="vertical-align: top; text-align: right; width: 25%; padding-left: 15px;">
+                    <img src="TU_FOTO.jpg" alt="Foto de Sergio Estévez" style="width: 120px; height: 140px; object-fit: cover; border-radius: 4px; border: 1px solid #cbd5e1; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>Objetivo Profesional</h2>
+    <div class="profile-text">
+        Comprometido con el aprendizaje continuo, busco poner los conocimientos adquiridos en mi carrera profesional en los últimos diez años para colaborar en proyectos laborales.
+    </div>
+
+    <h2>Formación Académica</h2>
+
+    <div class="item">
+        <table style="width:100%; border-collapse: collapse; margin-bottom: 0;">
+            <tr>
+                <td class="item-header" style="padding-bottom: 0;">
+                    Bachillerato en Modalidad de Ciencias y Tecnología
+                    <div class="item-date" style="text-align: left; font-size: 9pt; font-weight: normal; margin-top: 1px; color: #1e3a8a;">
+                        <strong>2019-2021</strong>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="item-sub" style="margin-top: 10px;">IES Chapela, Redondela</div>
+    </div>
+
+    <div class="item">
+        <table style="width:100%; border-collapse: collapse; margin-bottom: 0;">
+            <tr>
+                <td class="item-header" style="padding-bottom: 0;">
+                    Grado en Ingeniería de Tecnologías de Telecomunicación (GETT)
+                    <div class="item-date" style="text-align: left; font-size: 9pt; font-weight: normal; margin-top: 1px; color: #1e3a8a;">
+                        <strong>2021-2023</strong>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="item-sub" style="margin-top: 10px;">Universidad de Vigo, Vigo</div>
+        <div class="item-details">
+            <ul>
+                <li>Matemáticas: Probabilidad y estadística, Álgebra lineal y Cálculo.</li>
+                <li>Física: Fundamentos de mecánica y termodinámica y Análisis de circuitos lineales.</li>
+                <li>Programación de alto nivel (C, C++).</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="item">
+        <table style="width:100%;">
+            <tr>
+                <td class="item-header">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)
+                <div class="item-date" style="text-align: left; font-size: 9pt; font-weight: normal; margin-top: 2px;">
+                    <strong>2025-2027</strong>
+                </div>
+                </td>
+            </tr>
+        </table>
+        <div class="item-sub" style="margin-top: 10px;">CPR CEBEM, Vigo</div>
+        <div class="item-details">
+            <ul>
+                <li>Desarrollo de aplicaciones móviles (Android/Kotlin) y de escritorio (Java, C#).</li>
+                <li>Gestión de bases de datos relacionales y no relacionales (MySQL, PostgreSQL, MongoDB).</li>
+                <li>Proyecto final: Diseño e implementación completa de una app nativa para gestión de inventarios.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--<h2>Proyectos Destacados (Sin Experiencia Laboral)</h2>
+    
+    <div class="item">
+        <table style="width:100%;">
+            <tr>
+                <td class="item-header">Sistema de Control de Asistencia Sanitaria (Proyecto Académico)</td>
+                <td class="item-date">2025</td>
+            </tr>
+        </table>
+        <div class="item-details">
+            Aplicación multiplataforma desarrollada en JavaFX y Firebase orientada a la optimización de flujos de pacientes. Implementación de login seguro, notificaciones en tiempo real y arquitectura limpia.
+        </div>
+    </div>-->
+
+    <h2>Competencias y Aptitudes</h2>
+    <table class="skills-table">
+        <tr>
+            <td>
+                <div style="font-weight: bold; margin-bottom: 5px; color: #2b4c7e;">Hard Skills</div>
+                <ul style="padding-left: 15px;">
+                    <li>Lenguajes: Java, JavaScript, C, C++, C#, SQL, noSQL.</li>
+                    <li>Entornos: Android Studio, VS Code, IntelliJ IDEA.</li>
+                    <li>Adicional: Modelado 3D, Rigging y Animación en Maya y Blender</li>
+                </ul>
+            </td>
+            <td>
+                <div style="font-weight: bold; margin-bottom: 5px; color: #2b4c7e;">Soft Skills</div>
+                <ul style="padding-left: 15px;">
+                    <li>Capacidad analítica y resolución de problemas.</li>
+                    <li>Trabajo en equipo: proactividad y comunicación.</li>
+                    <li>Trabajo en solitario: autonomía, resiliencia y trabajar bajo presión.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Idiomas</h2>
+    <div class="item" style="margin-bottom: 0;">
+        <ul style="padding-left: 15px;">
+            <li><strong>Español:</strong> Nativo</li>
+            <li><strong>Galego:</strong> Nativo (Certificado Celga 4)</li>
+            <li><strong>Inglés:</strong> Nivel B2 (Conversación Nivel C1)</li>
+        </ul>
+    </div>
+
+    </div>
+</body>
+</html>

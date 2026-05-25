@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ejemplo de integración de Bootstrap y Masonry">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <title>Masonry example · Bootstrap v5.3</title>
+  <title>nuevasviejas.es</title>
   
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/masonry/">
   <link rel="icon" type="image/png" href="https://cdn3.emoji.gg/emojis/6635-joe-hmmm.png">
@@ -207,11 +207,11 @@
       border-radius: 8px;
       color: white; 
     ">
-    <h1 style="background-color: rgb(161, 114, 67); display: inline-block;"> &nbsp;Albañiles Paco &nbsp;</h1>
+    <h1 style="background-color: rgb(161, 114, 67); display: inline-block;">&nbsp;Albañiles Paco &nbsp;</h1>
     <br>
     <h5 style="background-color: rgb(134, 87, 41); display: inline-block;">&nbsp; Tu muro de noticias, avisos sin ánimo de lucro y otras novedades de confianza &nbsp;</h5>
     <br>
-    <small style="background-color: rgb(134, 109, 83);">&nbsp; No somos albañiles de verdad, disculpa &nbsp;</small>
+    <small style="background-color: rgb(134, 109, 83);">&nbsp; No somos albañiles de verdad &nbsp;</small>
     </div>
     
     <hr class="my-5">
@@ -221,7 +221,9 @@
       <div class="col-sm-6 col-lg-4 mb-4">
         <a href="https://youtu.be/alnRFJ9u1ro?si=TN6-GD1cJEEX7KR2" target="_blank" class="masonry-link">
           <div class="card">
-            <img src="https://cdn.mos.cms.futurecdn.net/v2/t:0,l:289,cw:1730,ch:1298,q:80,w:1730/DAuVDvrELCJP3swkSgvgkS.jpg" alt="asteroide" class="bd-placeholder-img flex-shrink-0" width="auto" height="auto" style="object-fit: cover; border-radius: 6px;">
+            <img src="https://cdn.mos.cms.futurecdn.net/v2/t:0,l:289,cw:1730,ch:1298,q:80,w:1730/DAuVDvrELCJP3swkSgvgkS.jpg"
+             alt="asteroide" class="bd-placeholder-img flex-shrink-0" 
+             width="auto" height="300px" style="object-fit: cover; border-radius: 6px;">
             <div class="card-body">
               <h5 class="card-title">Avistamiento de asteroide</h5>
               <p class="card-text">"Vamos a morir todos," afirma un habitante de Ponteareas, Galicia.</p>
@@ -231,14 +233,14 @@
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-2" class="masonry-link">
+        <a href="https://es.wikipedia.org/wiki/Belceb%C3%BA" target="_blank" class="masonry-link">
           <div class="card p-3">
             <figure class="p-3 mb-0">
               <blockquote class="blockquote">
-                <p>A well-known quote, contained in a blockquote element.</p>
+                <p>"Tiene miedo aquel que no obtiene resultados."</p>
               </blockquote>
               <figcaption class="blockquote-footer mb-0 text-body-secondary">
-                Someone famous in <cite title="Source Title">Source Title</cite>
+                Leonardo Gutiérrez,<cite title="Source Title"> La Nana de las Moscas</cite>.
               </figcaption>
             </figure>
           </div>
@@ -246,31 +248,29 @@
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-3" class="masonry-link">
+        <a href="https://supermercado.froiz.com/pescaderia" target="_blank" class="masonry-link">
           <div class="card">
-            <svg aria-label="Placeholder: Image cap" class="bd-placeholder-img card-img-top" height="200" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect>
-              <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-            </svg>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTALiaKqKxApvhh4C-Dl1P3V2otBfIizjiVmpTHqLQiHOye86NEdX1LaXIeVE1v3EwQa0pB6aZP9e3Mz04EFPfK1VM3p3LwJAnzBIivqhc&s=10"
+             alt="mero" class="bd-placeholder-img flex-shrink-0"
+             width="auto" height="auto" style="object-fit: cover; border-radius: 6px;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Matan al Mero Romero</h5>
+              <p class="card-text">La mascota del Bueu FC es encontrada fenecida en una lonja.</p>
+              <p class="card-text"><small class="text-body-secondary">Última actualización hace: 2 días</small></p>
             </div>
           </div>
         </a>
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-4" class="masonry-link">
+        <a data-bs-toggle="modal" data-bs-target="#modalImagen1" class="masonry-link">
           <div class="card text-bg-primary text-center p-3">
             <figure class="mb-0">
               <blockquote class="blockquote">
-                <p>A well-known quote, AAAAAA contained in a blockquote element.</p>
+                <p>"Mas sabe el pez diablo por pez que por diablo"</p>
               </blockquote>
               <figcaption class="blockquote-footer mb-0 text-white">
-                Someone famous in <cite title="Source Title">Source Title</cite>
+                Pedro Percebe, <cite title="Source Title">67 Leguas de Viaje Submarino</cite>
               </figcaption>
             </figure>
           </div>
@@ -278,38 +278,36 @@
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-5" class="masonry-link">
+        <a href="https://aprendetu.vercel.app/courses" target="_blank" class="masonry-link">
           <div class="card text-center">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has a regular title and short paragraph of text below it.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Cierra AprendeTu</h5>
+              <p class="card-text">La libertad del pueblo se es devuelta a cada uno de sus habitantes.</p>
+              <p class="card-text"><small class="text-body-secondary">Última actualización hace: 17 minutos</small></p>
             </div>
           </div>
         </a>
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-6" class="masonry-link">
+        <a data-bs-toggle="modal" data-bs-target="#modalGIF" class="masonry-link">
           <div class="card">
-            <svg aria-label="Placeholder: Card image" class="bd-placeholder-img card-img" height="260" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect>
-              <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Card image</text>
-            </svg>
+            <img src="https://preview.redd.it/i-need-more-pics-with-this-vibe-a-fat-seal-disrupting-a-v0-izo3lwhvd6nf1.jpg?width=640&crop=smart&auto=webp&s=94e9c1d6e89e4b493ec4ac3f97d1e798ade3bcf8"
+             alt="TBA" class="bd-placeholder-img flex-shrink-0" 
+             width="auto" height="auto" style="object-fit: cover; border-radius: 6px;">
           </div>
         </a>
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-7" class="masonry-link">
+        <a href="https://es.wikipedia.org/wiki/Afirmaciones_del_or%C3%A1culo_de_Delfos" target="_blank" class="masonry-link">
           <div class="card p-3 text-end">
             <figure class="mb-0">
               <blockquote class="blockquote">
-                <p>A well-known quote, contained in a blockquote element.</p>
+                <p>"Todos se despedirán de uno y solo esa persona presenciará el milagro."</p>
               </blockquote>
               <figcaption class="blockquote-footer mb-0 text-body-secondary">
-                Someone famous in <cite title="Source Title">Source Title</cite>
+                Anónimo
               </figcaption>
             </figure>
           </div>
@@ -317,42 +315,40 @@
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-8" class="masonry-link">
+        <a data-bs-toggle="modal" data-bs-target="#modalComentarios" class="masonry-link">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Duda espontánea</h5>
+              <p class="card-text">Si alguien sabe dónde venden esos churros muy buenos cerca de Tui que me lo diga porfa.</p>
+              <p class="card-text"><small class="text-body-secondary">Última actualización hace: 2 horas</small></p>
             </div>
           </div>
         </a>
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-9" class="masonry-link">
+        <a href="https://es.wikipedia.org/wiki/Extraterrestre" target="_blank" class="masonry-link">
           <div class="card">
-            <svg aria-label="Placeholder: Image cap" class="bd-placeholder-img card-img-top" height="200" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect>
-              <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-            </svg>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/All_Gizah_Pyramids.jpg"
+             alt="TBA" class="bd-placeholder-img flex-shrink-0" 
+             width="auto" height="auto" style="object-fit: cover; border-radius: 6px;">
             <div class="card-body">
-              <h5 class="card-title">Card title that wraps to a new line</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">Y esto qué??</h5>
+              <p class="card-text">Pero qué pedazo de papanatas miró al desierto y dijo "pon seis triángulos aquí"??</p>
             </div>
           </div>
         </a>
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-10" class="masonry-link">
-          <div class="card text-bg-primary text-center p-3">
+        <a class="masonry-link">
+          <div class="card text-bg-danger text-center p-3">
             <figure class="mb-0">
               <blockquote class="blockquote">
-                <p>A well-known quote, AAAAAA contained in a blockquote element.</p>
+                <p>por fa hacer un sefamoro</p>
               </blockquote>
               <figcaption class="blockquote-footer mb-0 text-white">
-                Someone famous in <cite title="Source Title">Source Title</cite>
+                anonimo.p.77
               </figcaption>
             </figure>
           </div>
@@ -360,26 +356,26 @@
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-11" class="masonry-link">
+        <a href="https://300lereles.com" target="_blank" class="masonry-link">
           <div class="card">
             <svg aria-label="Placeholder: Card image" class="bd-placeholder-img card-img" height="260" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
-              <title>Placeholder</title>
+              <title>300 lereles</title>
               <rect width="100%" height="100%" fill="#868e96"></rect>
-              <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Card image</text>
+              <text x="50%" y="50%" fill="#dee2e6" dy=".3em">imagen retirada por el autor</text>
             </svg>
           </div>
         </a>
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-12" class="masonry-link">
-          <div class="card text-bg-primary text-center p-3">
+        <a class="masonry-link">
+          <div class="card text-bg-warning text-center p-3">
             <figure class="mb-0">
               <blockquote class="blockquote">
-                <p>A well-known quote, AAAAAA contained in a blockquote element.</p>
+                <p>asi?</p>
               </blockquote>
               <figcaption class="blockquote-footer mb-0 text-white">
-                Someone famous in <cite title="Source Title">Source Title</cite>
+                xX_caballomontes_Xx
               </figcaption>
             </figure>
           </div>
@@ -387,14 +383,14 @@
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-13" class="masonry-link">
-          <div class="card text-bg-primary text-center p-3">
+        <a class="masonry-link">
+          <div class="card text-bg-success text-center p-3">
             <figure class="mb-0">
               <blockquote class="blockquote">
-                <p>A well-known quote, AAAAAA contained in a blockquote element.</p>
+                <p>siiii muchas garciaas</p>
               </blockquote>
               <figcaption class="blockquote-footer mb-0 text-white">
-                Someone famous in <cite title="Source Title">Source Title</cite>
+                anonimo.p.77
               </figcaption>
             </figure>
           </div>
@@ -402,54 +398,50 @@
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-14" class="masonry-link">
+        <a href="https://youtu.be/nPagZ_GmA6M?si=UQZaGwwaQDF9aBSS" target="_blank" class="masonry-link">
           <div class="card">
-            <svg aria-label="Placeholder: Image cap" class="bd-placeholder-img card-img-top" height="200" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect>
-              <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-            </svg>
+            <img src="https://images.steamusercontent.com/ugc/1468688760618849867/7E27D2C069D6E61892097F9A4072CE0E7199BA17/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+             alt="TBA" class="bd-placeholder-img flex-shrink-0" 
+             width="auto" height="231px" style="object-fit: cover; border-radius: 6px;">
             <div class="card-body">
-              <h5 class="card-title">Card title that wraps to a new line</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">Dear Americans. You will NEVER be forgiven.</h5>
+              <p class="card-text">Your imperialist tendencies are disgusting. My people are prepared to give our LIFE to see your nation collapse 🧙‍♂️</p>
             </div>
           </div>
         </a>
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-15" class="masonry-link">
+        <a href="https://youtu.be/b1BQ8ybGQIw?si=yAa_cjGsl473ZFdD&t=950" target="_blank" class="masonry-link">
           <div class="card text-center">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has a regular title and short paragraph of text below it.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">[Publicación sin título]</h5>
+              <p class="card-text">Únete hoy a una sesión de limpieza de alma para estrechar lazos con tu fe</p>
+              <p class="card-text"><small class="text-body-secondary">Última actualización hace: 58 minutos</small></p>
             </div>
           </div>
         </a>
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-16" class="masonry-link">
+        <a href="https://es.wikipedia.org/wiki/Nihilismo" target="_blank" class="masonry-link">
           <div class="card">
-            <svg aria-label="Placeholder: Card image" class="bd-placeholder-img card-img" height="260" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect>
-              <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Card image</text>
-            </svg>
+            <img src="https://pbs.twimg.com/media/GahZ0nPWUAAa8oY.jpg"
+             alt="perro" class="bd-placeholder-img flex-shrink-0" 
+             width="auto" height="335px" style="object-fit: cover; border-radius: 6px;">
           </div>
         </a>
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
-        <a href="https://example.com/noticia-17" class="masonry-link">
+        <a href="https://en.wikipedia.org/wiki/Huangmei_Dawang" target="_blank" class="masonry-link">
           <div class="card p-3">
             <figure class="p-3 mb-0">
               <blockquote class="blockquote">
-                <p>A well-known quote, contained in a blockquote element.</p>
+                <p>El sufrimiento humano y la codicia son las verdaderas fuerzas motrices de la existencia.</p>
               </blockquote>
               <figcaption class="blockquote-footer mb-0 text-body-secondary">
-                Someone famous in <cite title="Source Title">Source Title</cite>
+                Huangmei Dawang
               </figcaption>
             </figure>
           </div>
@@ -458,6 +450,126 @@
 
     </div>
   </main>
+
+  <!--MODALES-->
+
+  <div class="modal fade" id="modalImagen1" tabindex="-1" aria-labelledby="modalImagen1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered"> <div class="modal-content bg-transparent border-0"> <div class="modal-header border-0 p-0 justify-content-end">
+          <button type="button" class="btn-close btn-close-white m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0 text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0hiGL_wfQq14SvlFnJEqpZqiiOQd1Ilbu0A&s" alt="diablo" class="img-fluid rounded shadow-lg" style="max-height: 85vh; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGIF" tabindex="-1" aria-labelledby="modalImagenGIFLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 85vw;"> 
+      <div class="modal-content bg-transparent border-0"> 
+        <div class="modal-header border-0 p-0 justify-content-end">
+          <button type="button" class="btn-close btn-close-white m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0 text-center">
+          <img src="https://media.tenor.com/jCyhovCeoiMAAAAM/seal-seal-dance.gif" alt="awawa"
+          class="img-fluid w-100 rounded shadow-lg" style="max-height: 80vh; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Comentarios -->
+  <div class="modal fade" id="modalComentarios" tabindex="-1" aria-labelledby="modalComentariosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        
+        <!-- Encabezado del Modal -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalComentariosLabel">
+            <i class="bi bi-chat-left-text me-2"></i>Comentarios (2)
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Cuerpo del Modal -->
+        <div class="modal-body">
+          <div class="comentarios-lista mb-4">
+            <!-- Comentario 1 -->
+            <div class="d-flex mb-3">
+              <img src="https://static.wikia.nocookie.net/doratheexplorer/images/1/17/Dorainseries.png/revision/latest?cb=20240203175127" alt="Usuario 1" class="rounded-circle me-3" style="width: 40px; height: 40px; object-fit: cover;">
+              <div class="bg-light p-3 rounded w-100">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <strong class="small text-dark">Isidora Ramírez</strong>
+                  <span class="text-secondary" style="font-size: 0.75rem;">Hace 2 horas</span>
+                </div>
+                <p class="small text-secondary mb-0">Maybe you could help yourself by using a trusty map!
+                  <img src="https://media.tenor.com/PSRIIOslZAwAAAAM/dora-themap.gif" alt="awawa" class="img-fluid rounded shadow-lg" style="max-height: 85vh; object-fit: contain;">
+                </p>
+              </div>
+            </div>
+
+            <!-- Comentario 2 -->
+            <div class="d-flex mb-3">
+              <img src="https://cdn3.emoji.gg/emojis/58588-thumbs-up-joe.pnghttps://cdn3.emoji.gg/emojis/58588-thumbs-up-joe.png" alt="Usuario 2" class="rounded-circle me-3" style="width: 40px; height: 40px; object-fit: cover;">
+              <div class="bg-light p-3 rounded w-100">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <strong class="small text-dark">xX_caballomontes_Xx</strong>
+                  <span class="text-secondary" style="font-size: 0.75rem;">Hace 5 horas</span>
+                </div>
+                <p class="small text-secondary mb-0">no, meu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pie del Modal con Alerta de Baneo -->
+        <div class="modal-footer border-top d-block">
+          <form id="formComentario">
+            <div class="d-flex align-items-start gap-2">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Default-Icon.jpg" alt="Tu perfil" class="rounded-circle" style="width: 35px; height: 35px; object-fit: cover;">
+              
+              <div class="w-100">
+                <textarea class="form-control form-control-sm" id="nuevoComentario" rows="2" placeholder="Escribe un comentario..." style="resize: none;"></textarea>
+                
+                <!-- MENSAJE DE ERROR (Oculto por defecto usando 'd-none' de Bootstrap) -->
+                <div id="errorBaneo" class="text-danger small mt-2 d-none fw-bold">
+                  <i class="bi bi-exclamation-triangle-fill me-1"></i> 
+                  No puedes comentar. Tu cuenta ha sido baneada.
+                </div>
+
+                <div class="d-flex justify-content-end mt-2">
+                  <button type="button" class="btn btn-secondary btn-sm me-2" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="submit" class="btn btn-primary btn-sm px-3">Publicar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT PARA DETECTAR EL INTENTO DE ENVÍO -->
+  <script>
+    document.getElementById('formComentario').addEventListener('submit', function(event) {
+      // Evita que la página se recargue o intente enviar el formulario
+      event.preventDefault(); 
+      
+      // Selecciona el contenedor del mensaje de error
+      const alertaBaneo = document.getElementById('errorBaneo');
+      
+      // Muestra el texto en rojo quitando la clase de Bootstrap que lo oculta
+      alertaBaneo.classList.remove('d-none');
+      
+      // (Opcional) Limpia el textarea para dar sensación de bloqueo definitivo
+      document.getElementById('nuevoComentario').value = '';
+    });
+  </script>
+
+    </div>
+  </div>
+</div>
 
   <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
     <div class="container text-center">
